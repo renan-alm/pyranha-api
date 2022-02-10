@@ -19,6 +19,9 @@ def index():
     <body>
     <h1>Pyranha API</h1>
     <p>This application doesn't do much, but it bites! </p>
+    <p>
+        <img src="https://thedrawingjourney.com/wp-content/uploads/2019/04/how-to-draw-a-piranha-step-ten.jpeg" alt="pyranha-photo" width="400" height="300">
+    </p>
     <h2>Endpoints</h2>
         <ol>
             <li><a href="/ping">/ping</a>
