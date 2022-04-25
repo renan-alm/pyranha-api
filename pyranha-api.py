@@ -105,4 +105,4 @@ def get_interaction_by_mood():
 
 if __name__ == '__main__':
     pyranha_debug()
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=4000, debug=True)

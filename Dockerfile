@@ -1,9 +1,10 @@
 FROM docker.prod.nordnet.se/python:3.10.1-slim-buster
 
-COPY requirements.txt /tmp/requirements.txt
-RUN pip install -r /tmp/requirements.txt
+COPY . /app
+WORKDIR /app
 
-EXPOSE 8080:8080
+RUN pip install -r /app/requirements.txt
 
-COPY pyranha-api.py /opt/pyranha-api.py
-ENTRYPOINT ["/opt/pyranha-api.py"]
+EXPOSE 4000:4000
+
+CMD ["python", "pyranha-api.py"]
